@@ -1,3 +1,5 @@
+import MovieRow from "./components/MovieRow";
+
 function App() {
   return (
     <div className="App">
@@ -14,72 +16,86 @@ function App() {
           </div>
         </div>
         <div className="bg-ice flex-1 flex-col flex  justify-around rancho">
-          <div className="rounded-lg  h-full grid grid-cols-5 my-5 ">
-            <img
-              src="https://www.ghibli.jp/images/kazetachinu.jpg"
-              alt=""
-              className="object-scale-down h-40 w-96"
-            />
-            <div className="flex-none col-span-2">
-              <h1 className="rancho text-2xl">The Wind Rises</h1>
-              <p className="rancho">
-                A lifelong love of flight inspires Japanese aviation engineer
-                Jiro Horikoshi (Hideaki Anno), whose storied career includes the
-                creation of the A6M World War II fighter plane.
-              </p>
-            </div>
-            <div className="flex-none col-span-2">asdfg</div>
-          </div>
-          <div className="rounded-lg rancho h-full grid grid-cols-5 my-5 ">
-            <img
-              src="https://www.ghibli.jp/images/kazetachinu.jpg"
-              alt=""
-              className="object-scale-down h-40 w-96"
-            />
-            <div className="flex-none  col-span-2">
-              <h1 className=" text-2xl">The Wind Rises</h1>
-              <p>
-                A lifelong love of flight inspires Japanese aviation engineer
-                Jiro Horikoshi (Hideaki Anno), whose storied career includes the
-                creation of the A6M World War II fighter plane.
-              </p>
-            </div>
-            <div className="flex-none col-span-2">asdfg</div>
-          </div>
-          <div className="rounded-lg  h-full grid grid-cols-5 my-5 ">
-            <img
-              src="https://www.ghibli.jp/images/kazetachinu.jpg"
-              alt=""
-              className="object-scale-down h-40 w-96"
-            />
-            <div className="flex-none col-span-2">
-              <h1 className=" text-2xl">The Wind Rises</h1>
-              <p>
-                A lifelong love of flight inspires Japanese aviation engineer
-                Jiro Horikoshi (Hideaki Anno), whose storied career includes the
-                creation of the A6M World War II fighter plane.
-              </p>
-            </div>
-            <div className="flex-none col-span-2">asdfg</div>
-          </div>
-          <div className="rounded-lg  h-full grid grid-cols-5 my-5 ">
-            <img
-              src="https://www.ghibli.jp/images/kazetachinu.jpg"
-              alt=""
-              className="object-scale-down h-40 w-96"
-            />
-            <div className="flex-none col-span-2">
-              <h1 className=" text-2xl">The Wind Rises</h1>
-              <p>
-                A lifelong love of flight inspires Japanese aviation engineer
-                Jiro Horikoshi (Hideaki Anno), whose storied career includes the
-                creation of the A6M World War II fighter plane.
-              </p>
-            </div>
-            <div className="flex-none col-span-2">asdfg</div>
-          </div>
+          
+         <MovieRow />
+         <MovieRow />
+         <MovieRow />
+         <MovieRow />
 
-          <div className="h-min">pagination</div>
+          <div className="h-min">
+            <ol class="flex justify-center text-xs font-medium gap-1">
+              <li>
+                <a
+                  href="/?page=1"
+                  class="inline-flex items-center justify-center w-8 h-8 border border-gray-100 rounded"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3 h-3"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/?page=1"
+                  class="block w-8 h-8 text-center border border-gray-100 rounded leading-8"
+                >
+                  1
+                </a>
+              </li>
+
+              <li class="block w-8 h-8 text-center text-white bg-blue-600 border-blue-600 rounded leading-8">
+                2
+              </li>
+
+              <li>
+                <a
+                  href="/?page=3"
+                  class="block w-8 h-8 text-center border border-gray-100 rounded leading-8"
+                >
+                  3
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/?page=4"
+                  class="block w-8 h-8 text-center border border-gray-100 rounded leading-8"
+                >
+                  4
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/?page=3"
+                  class="inline-flex items-center justify-center w-8 h-8 border border-gray-100 rounded"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3 h-3"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
